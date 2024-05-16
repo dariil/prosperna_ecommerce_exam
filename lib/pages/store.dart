@@ -27,7 +27,7 @@ class _StorePageState extends State<StorePage> {
             child: Container(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
               // color: Colors.blue,
-              height: MediaQuery.of(context).size.height * 1,
+              height: MediaQuery.of(context).size.height * 0.9,
               child: GridView.builder(
                   itemCount: myFunc.tbl_products.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
