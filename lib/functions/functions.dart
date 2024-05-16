@@ -1,8 +1,4 @@
-import 'package:hive_flutter/adapters.dart';
-
 class pageFunctions {
-  final Box box = Hive.box("mybox");
-
   static List<Map<dynamic, dynamic>> _tbl_products = [];
   List<Map<dynamic, dynamic>> get tbl_products => _tbl_products;
 

@@ -1,7 +1,6 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hive_flutter/adapters.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:prosperna_ecommerce_exam/functions/functions.dart';
 import 'package:prosperna_ecommerce_exam/pages/maintainProduct.dart';
@@ -22,7 +21,6 @@ class _EditProductState extends State<EditProduct> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   // final ImagePicker _picker = ImagePicker();
   pageFunctions myFunc = pageFunctions();
-  final Box box = Hive.box("mybox");
   var index;
   File? image;
 

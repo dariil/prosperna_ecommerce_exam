@@ -21,6 +21,11 @@ class _CartState extends State<Cart> {
   pageComponents myComponents = pageComponents();
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
 
+  void initState() {
+    super.initState();
+    _calculateCartTotal();
+  }
+
   void _calculateCartTotal() {
     cartTotalPrice = 0.0;
     for (var i = 0; i < myFunc.tbl_cart.length; i++) {

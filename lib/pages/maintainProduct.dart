@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:hive/hive.dart';
 import 'package:prosperna_ecommerce_exam/functions/functions.dart';
 import 'package:prosperna_ecommerce_exam/pages/editProduct.dart';
 import '../widgets/components.dart';
@@ -16,7 +15,6 @@ class MaintainProduct extends StatefulWidget {
 
 class _MaintainProductState extends State<MaintainProduct> {
   pageFunctions myFunc = pageFunctions();
-  final Box box = Hive.box("mybox");
   var productList;
 
   void initState() {
